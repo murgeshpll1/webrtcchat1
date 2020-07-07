@@ -1,5 +1,5 @@
 var static = require('node-static');
-var http = require('http');
+var http = require('https');
 var file = new(static.Server)();
 var app = http.createServer(function (req, res) {
   file.serve(req, res);
